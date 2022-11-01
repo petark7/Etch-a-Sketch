@@ -9,6 +9,16 @@ let btnChangeGridSize = document.getElementById('changeGridSize');
 // render grid
 renderGrid(numberOfRows);
 
+btnToggle.addEventListener('click', function() {
+    if (toggledRainbow == true)
+    {
+        toggledRainbow = false;
+    }
+    else {
+        toggledRainbow = true;
+    }
+});
+
 btnChangeGridSize.addEventListener('click', function() {
     while (true)
     {
